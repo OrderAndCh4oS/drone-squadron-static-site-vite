@@ -1,0 +1,261 @@
+html {
+    background-color: #1c1d1f;
+}
+
+html, body {
+    font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
+    color: #bfbfbf;
+    background-color: #1c1d1f;
+    background: linear-gradient(#1c1d1f, #0f0f11);
+}
+
+h1 {
+    font-size: 23px;
+    margin: 0 0 16px 0;
+}
+
+h2 {
+    font-size: 19px;
+    margin: 0 0 18px 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0 0 16px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #33FF9F;
+    font-weight: normal;
+}
+
+table {
+    margin-bottom: 16px;
+}
+
+th, td {
+    padding: 6px 8px 4px;
+    border: 1px dotted #bfbfbf;
+}
+
+a {
+    color: #bfbfbf;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #33FF9F;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 410px;
+}
+
+img.single {
+    max-width: 400px;
+}
+
+figure {
+    display: block;
+    margin: 0;
+}
+
+figure:hover {
+
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background-color: #33FF9F;
+    color: #1c1d1f;
+    padding: 6px 12px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+
+blockquote {
+    border-left: #33FF9F 4px solid;
+    margin-left: 0;
+    padding-left: 12px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    padding: 36px;
+    width: 95%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-grid {
+    display: flex;
+}
+
+.equipment-column {
+    padding-right: 16px;
+}
+
+.nav-link {
+    margin-right: 16px;
+}
+
+.squadrons-header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.squadrons-header-bar h2 {
+    margin-bottom: 0;
+}
+
+.select {
+    background-color: #1c1d1f;
+    border: 2px solid #33FF9F;
+    color: #bfbfbf;
+    font-size: 16px;
+    padding: 4px 8px;
+    margin-right: 16px;
+    font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
+}
+
+.select:focus {
+    border-style: dashed;
+    outline: none;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.c-black {
+    color: #1c1d1f;
+}
+
+.bc-black {
+    color: #1c1d1f;
+}
+
+.c-white {
+    color: #bfbfbf;
+}
+
+.bc-white {
+    color: #bfbfbf;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    padding: 0 16px 16px 0;
+}
+
+.ipfs-link {
+    background-color: #1c1d1f;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 16px;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    padding: 2px 3px 4px;
+}
+
+.ipfs-link svg {
+    fill: #33FF9F;
+}
+
+.editions {
+    background-color: #1c1d1f;
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    padding: 6px 12px;
+    color: #33FF9F;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.price {
+    background-color: #33FF9F;
+    position: absolute;
+    bottom: 20px;
+    right: 64px;
+    padding: 6px 12px;
+    color: #1c1d1f;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.svg-inline--fa {
+    position: relative;
+    top: 3px;
+    width: 16px;
+}
+
+.c-candy {color: #FF2BE4}
+.c-toxic {color: #33FF9F}
+.c-constructivist-real {color: #FF4100}
+.c-order-and-chaos {color: #FFF73D}
+.c-pistachio-and-peach {color: #9C36B3}
+.c-warm-grey {color:  #F2DABD}
+
+.b-candy {border-color: #FF2BE4}
+.b-toxic {border-color: #33FF9F}
+.b-constructivist-real {border-color: #FF4100}
+.b-order-and-chaos {border-color: #FFF73D}
+.b-pistachio-and-peach {border-color: #9C36B3}
+.b-warm-grey {border-color:  #F2DABD}
+
+.bc-candy {background-color: #FF2BE4}
+.bc-toxic {background-color: #33FF9F}
+.bc-constructivist-real {background-color: #FF4100}
+.bc-order-and-chaos {background-color: #FFF73D}
+.bc-pistachio-and-peach {background-color: #9C36B3}
+.bc-warm-grey {background-color:  #F2DABD}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #1c1d1f;
+}
+
+.box img {
+    min-width: 320px;
+    min-height: 320px;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        margin: auto;
+        width: 88%;
+        padding: 6% 0;
+    }
+    img {
+        max-width: 400px;
+    }
+    .box {
+        max-width: 400px;
+        position: relative;
+        display: block;
+        padding: 0 16px 16px 0;
+    }
+}

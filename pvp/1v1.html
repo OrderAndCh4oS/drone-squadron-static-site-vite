@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+         ##############################################################################
+
+
+                                                    .,:;:,
+                                                 ,;;:,,:ror.
+                                              .:;,.     .ro:
+                                             :;.         ;r.
+           r&SAS&r          rSSCCOd.       ,rSSSCC&r.   ,r.   ;SSSSSS.        rSSSCOe,
+          &HH;,rHH&         OHS  HHe      :r,AHC,;CHS. :;.    rHHc            dHH  AHS
+         .HHC   CHH.        OHHSAHS:     :o. AH&  rHHr;,      rHHAAAA         dHHSSHAr
+          &HH;,rHH&         OHS;CHC.    ,o,  AHC,:CHA;.       rHHo            dHH;eHA,
+           r&SAS&r          rS&  CSe    rr   CSSSCO&,      .  ;SSSSSS:        rSS, rSO.
+                                       .oo&d     ,;.     .;;
+                                      .odo;     ::  ,,  ::,
+                              ..     :SS;oo:  .;, .OHH&;.       .                  ,:re&OASo
+                        ,;d&CHHHO, .&He. ,roodr.  ,HAr:       .,:    .,::.   .:rerer;,.  ,rr
+                   .;dOHHAHHHHHHHr:SS;  .dO:rooo;:;Odr,   .,:;ooo;o&SHHHHHrrro;,
+               ,reCA&o;,  ,SHHHHHHHr.  ;So :;..,;dooooooooor;d&CAS&drOHA&e;
+            ,;OHSd:         .,,:SHr  .&C, :;  .dOOHASSSC;.:eSHCo,   oHHC: .d;.
+          ;AHHHe.           :AHHC,  ;A&. :;  rC&SHHCoo;,,rHAd,       ;rAHSr&HH:
+         ;AHSd,             .AHHC;.dA;  ,; ,OOOHHH;    dHHr.            .:dOHHArr,
+       .&HS;                eH&OHHHHd. .r.dS&rOHHO   .OHHo               . ;HeorSHAOr.
+      .CHC.               .&Ho  eHAAHHOrdOOOC.AHHo  .&HHr,,,,.           .dA;    ,dAHAr
+      eHH:               .CH;  dHO..;reorOACodHHHS&rOHHHCderCHA&.       ;S&.       .AHA.
+     .HHH;              ,SA:.,rHSr;odd&OS&d;:&HHS.   SHHS,   ..      .;Oe,         ;HC:
+      OHHAd:.      .,,:;SA&oeHHo  oAHHS;     eHH&    ,SHH&,       .:r&;.       .:d&o:
+       ;&AHHHSCSSSCOerOHC. .OHo   .rHe.e:   .AHHd     .rOHHAACddrre;.     .,;oor:,
+          .,,,,..    oHS.  &He   ;SCo       ;HHH,         ,::,,.    :oddor;:.
+                    ;e;.  rHS. ,&O:        rAHHH;              rOd  ..
+                         :Se:;&r:      .r,dHHHHHC              ,;:
+                                           ,,,,Co             d:
+                                               ..
+
+
+         ##############################################################################
+ -->
+<head>
+    <title>Drone Squadron: 1v1</title>
+    <meta charset="utf-8"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1c1d1f">
+    <meta name="msapplication-TileColor" content="#1c1d1f">
+    <meta name="theme-color" content="#1c1d1f">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link type="text/css" rel="stylesheet" href="/pvp/1v1-files/style.css"/>
+</head>
+<body>
+<canvas id="canvas" class="canvas"></canvas>
+<span class="loading" id="loading">Loading...</span>
+<div id="player-forms" class="player-forms">
+    <div id="player-one-form" class="player-form">
+        <label for="player-one-input" class="label player-label">Squadron One</label>
+        <input
+                name="player-one"
+                id="player-one-input"
+                class="input player-input"
+                type="text"
+                placeholder="Objkt ID"
+        />
+        <button id="random-one" class="random-button">Random</button>
+    </div>
+    <div id="player-two-form" class="player-form">
+        <label for="player-two-input" class="label player-label">Squadron Two</label>
+        <input
+                name="player-two"
+                id="player-two-input"
+                class="input player-input"
+                type="text"
+                placeholder="Objkt ID"
+        />
+        <button id="random-two" class="random-button">Random</button>
+    </div>
+</div>
+<button id="start-button" class="start-button">Fight</button>
+<button id="continue-button" class="continue-button">Rematch</button>
+<div class="scores" id="scores">
+    <div class="score player-one-score" id="player-one-score">0</div>
+    <div class="score player-two-score" id="player-two-score">0</div>
+</div>
+<div id="debug-bar" class="debug-bar">
+    <button id="game-grid-toggle" class="button">Grid</button>
+    <button id="scanner-radius-toggle" class="button">Scanners</button>
+    <button id="scanner-path-toggle" class="button">Targets</button>
+    <button id="data-toggle" class="button">Data</button>
+    <button id="stop" class="button quit-button">Quit</button>
+</div>
+<script type="module" src="/pvp/1v1-files/index.js"></script>
+</body>
+</html>
