@@ -171,22 +171,20 @@ async function initialise() {
 }
 
 const getObjktArtifactUri =async (objktId) => {
-    const response = await fetch('https://api.hicdex.com/v1/graphql', {
+    const response = await fetch('https://api.teztok.com/v1/graphql', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-            query: `
-              query Objkt($objktId: bigint!) {
-                hic_et_nunc_token_by_pk(id: $objktId) {
+            query: `query GetDroneSquadronById {
+                tokens_by_pk(fa2_address: "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton", token_id: $objktId) {
                   artifact_uri
                 }
-              }
-            `,
+              }`,
             variables: {objktId: Number(objktId)},
         }),
     });
     const data = await response.json();
-    return data.data?.hic_et_nunc_token_by_pk?.artifact_uri
+    return data.data?.tokens_by_pk?.artifact_uri
 };
 
 async function fetchPlayerSquadron(objktId) {
