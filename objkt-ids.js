@@ -6,7 +6,8 @@ const getObjktIds = () =>
             query: `query getDroneSquadronEliteTokens {
   tokens(
     where: {
-      artist_address: {_eq: "tz1VgpmwW66LCbskjudK54Zp96vKn2cHjpGN"}
+      artist_address: {_eq: "tz1VgpmwW66LCbskjudK54Zp96vKn2cHjpGN"},
+      burned_editions: {_eq: "0"},
       name: {_ilike: "Drone Squadron: Elite #%"}
     }, limit: 1000, offset: 0) {
     name
