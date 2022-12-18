@@ -137,12 +137,12 @@ const getObjktArtifactUri =async (objktId) => {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-            query: `query GetDroneSquadronById {
+            query: `query GetDroneSquadronById($objktId: String!) {
                 tokens_by_pk(fa2_address: "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton", token_id: $objktId) {
                   artifact_uri
                 }
               }`,
-            variables: {objktId: Number(objktId)},
+            variables: {objktId: String(objktId)},
         }),
     });
     const data = await response.json();
